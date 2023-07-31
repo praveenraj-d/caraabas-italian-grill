@@ -1,0 +1,706 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+nav {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 10vh;
+  background-color: rgba(0, 0, 0, 0.792);
+  z-index: 10000;
+  overflow: hidden;
+}
+
+nav > .navbar {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+nav > .navbar > .icon1 {
+  width: 32%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+nav > .navbar > .icon1 > #sign {
+  width: 20%;
+  height: 100%;
+  margin: 0px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+nav > .navbar > .icon1 > #sign > ul {
+  list-style-position: inside;
+  list-style-image: url(./img/burger1.png);
+  background-color: black;
+  border: 1px solid yellow;
+  transform: scale(0.8);
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+nav > .navbar > .icon1 > #sign > ul li {
+  transform: translate(3px);
+  transition: 0.3s;
+}
+
+nav > .navbar > .icon1 > #sign > ul li:hover {
+  transform: translate(6px);
+}
+
+nav > .navbar > .log {
+  width: 31%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  transform: translate(-50px);
+}
+
+nav > .navbar > .log > .logo {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav > .navbar > .log > .logo > a > img {
+  width: 100%;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav > .navbar > .ul {
+  width: 32%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav > .navbar > .ul > .icon {
+  height: 100%;
+  width: 30%;
+  padding: 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav > .navbar > .ul > .icon > ul {
+  display: flex;
+  width: 30%;
+  height: 60%;
+  justify-content: center;
+  align-items: center;
+  list-style-image: url(./img/shopping-cart5.png);
+  border-radius: 1000px;
+  list-style-position: inside;
+  transform: scale(0.7);
+}
+nav > .navbar > .ul > .icon > ul li:hover {
+  transition: 0.1s;
+}
+
+nav > .navbar > .ul > .icon > ul li:hover {
+  transform: scale(1.1);
+}
+
+.sec-off {
+  display: flex;
+  align-items: end;
+  height: 120vh;
+  width: 100%;
+}
+.sec-off .left {
+  height: 92%;
+  width: 35%;
+  background-color: rgb(255, 99, 99);
+}
+
+.sec-off .left > form {
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-spacing: 0px;
+  overflow: hidden;
+}
+
+.sec-off > .left > form > .text {
+  width: 100%;
+  height: 15vh;
+  transform: translatey(-45px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-spacing: 5px;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.left > form > .input1,
+.input2,
+.input3 {
+  padding: 5px;
+  display: flex;
+  width: 95%;
+  height: 8vh;
+}
+
+.left > form > .input1 > #icon {
+  list-style-image: url(./img/types.png);
+}
+
+.left > form > .input2 > #icon {
+  list-style-image: url(./img/clock.png);
+}
+
+.left > form > .input3 > #icon {
+  list-style-image: url(./img/nearby1.png);
+}
+
+.left > form > .input1 > #icon,
+.input2 > #icon,
+.input3 > #icon {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: transparent;
+  width: fit-content;
+  height: 98%;
+  border-radius: 100px 0px 0px 100px;
+  list-style-position: inside;
+}
+
+.left > form > .input1 > #icon2 > li {
+  list-style-image: url(./img/unfold.png);
+}
+
+.left > form > .input1 > select {
+  appearance: none;
+}
+.left > form > .input2 > #icon2 > li {
+  list-style-image: url(./img/pen.png);
+}
+
+.left > form > .input3 > #icon2 > li {
+  list-style-image: url(./img/paper-plane.png);
+  transform: rotate(-35deg);
+}
+
+.left > form > .input1 > #icon2,
+.input2 > #icon2,
+.input3 > #icon2 {
+  flex-direction: row;
+  list-style-position: inside;
+  border-spacing: 0px;
+  background-color: transparent;
+  width: 18%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  border: 1px solid;
+}
+
+.left > form > .input1 > select,
+.input2 > select,
+.input3 > input {
+  width: 30em;
+  height: 8vh;
+  border: none;
+  border-spacing: 0px;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 1.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left form > .btn {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translatey(50px);
+}
+
+.left form > .btn > button {
+  width: 0%;
+  height: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left form > .btn > button > ul {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.left > form > .btn > button > ul > #btn {
+  list-style: none;
+  width: fit-content;
+  height: fit-content;
+  list-style-image: url(./img/serving-dish.png);
+  list-style-position: inside;
+  padding: 0px;
+  margin: 0px;
+  transition: 0.3s;
+  cursor: pointer;
+  border-radius: 500px;
+}
+
+.left > form > .btn > button > ul > #text {
+  list-style: none;
+  text-decoration: underline;
+  font-weight: bold;
+  width: 200%;
+}
+
+.left > form > .btn > button > ul > #btn:hover {
+  transform: scale(1.1);
+}
+
+.left > form > .btn > ul > #text {
+  list-style: none;
+  text-transform: capitalize;
+  font-size: 1rem;
+  width: fit-content;
+  height: fit-content;
+  background-color: transparent;
+}
+.sec-off .right {
+  background-color: rgb(255, 112, 112);
+  opacity: 0.6;
+  background-position: bottom;
+  width: 65%;
+  height: 92%;
+}
+
+.sec-off .right img {
+  width: 100%;
+  height: 100%;
+}
+
+.bottom {
+  overflow: hidden;
+  width: 100%;
+  height: 15vh;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.bottom > .links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 50%;
+  width: 100%;
+}
+
+.bottom > .links .fir-links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+  padding: 0px;
+  font-variant: small-caps;
+  font-size: 0.8rem;
+}
+
+.bottom > .links > .fir-links a {
+  color: rgb(255, 255, 255);
+  height: fit-content;
+  width: fit-content;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.bottom > .links .sec-link {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+  padding: 0px;
+  font-variant: small-caps;
+  font-size: 0.8rem;
+}
+
+.bottom > .links .sec-link a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  width: fit-content;
+  height: fit-content;
+  text-transform: capitalize;
+  font-weight: lighter;
+}
+
+.bottom > .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-end;
+  width: 99%;
+  height: 30%;
+  color: aliceblue;
+  overflow: hidden;
+}
+.bottom > .text > p {
+  width: fit-content;
+  word-spacing: 5px;
+  font-size: 0.8rem;
+}
+
+@media all and (max-width: 500px) {
+  nav {
+    height: 10vh;
+  }
+
+  nav > .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+  }
+
+  nav > .navbar > .icon1 {
+    width: 33.2%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+
+  nav > .navbar > .icon1 > #sign {
+    width: 50%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    overflow: hidden;
+  }
+
+  nav > .navbar > .icon1 > #sign > ul {
+    transform: scale(0.5);
+  }
+
+  nav > .navbar > .icon1 > #sign > ul li {
+    transform: translate(3px);
+  }
+
+  nav > .navbar > .log {
+    width: 33.2%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(0px);
+  }
+
+  nav > .navbar > .log > .logo {
+    width: 100%;
+    height: 200%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav > .navbar > .log > .logo > a > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav > .navbar > .ul {
+    width: 33.2%;
+    height: 90%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  nav > .navbar > .ul > .icon {
+    height: 100%;
+    width: 30%;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  nav > .navbar > .ul > .icon > ul {
+    display: flex;
+    width: 100%;
+    height: 60%;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-image: url(./img/shopping-cart5.png);
+    border-radius: 10px;
+    list-style-position: inside;
+    transform: scale(0.5);
+  }
+  nav > .navbar > .ul > .icon > ul li:hover {
+    transition: 0.1s;
+  }
+
+  nav > .navbar > .ul > .icon > ul li:hover {
+    transform: scale(1.1);
+  }
+
+  .sec-off {
+    display: flex;
+    flex-direction: column;
+    height: 130vh;
+    justify-content: flex-end;
+  }
+  .sec-off .left {
+    width: 100%;
+    height: 62.5%;
+    background-color: rgb(255, 99, 99);
+  }
+
+  .sec-off .left > form {
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-spacing: 0px;
+    overflow: hidden;
+  }
+
+  .sec-off > .left > form > .text {
+    width: 100%;
+    height: 15vh;
+    transform: translatey(-45px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-spacing: 5px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bolder;
+  }
+
+  .left > form > .input1,
+  .input2,
+  .input3 {
+    padding: 5px;
+    display: flex;
+    width: 95%;
+    height: 8vh;
+  }
+
+  .left > form > .input1 > #icon {
+    list-style-image: url(./img/types.png);
+  }
+
+  .left > form > .input2 > #icon {
+    list-style-image: url(./img/clock.png);
+  }
+
+  .left > form > .input3 > #icon {
+    list-style-image: url(./img/nearby1.png);
+  }
+
+  .left > form > .input1 > #icon,
+  .input2 > #icon,
+  .input3 > #icon {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: transparent;
+    width: fit-content;
+    height: 98%;
+    border-radius: 100px 0px 0px 100px;
+    list-style-position: inside;
+  }
+
+  .left > form > .input1 > #icon2 > li {
+    list-style-image: url(./img/unfold.png);
+  }
+
+  .left > form > .input1 > select {
+    appearance: none;
+  }
+  .left > form > .input2 > #icon2 > li {
+    list-style-image: url(./img/pen.png);
+  }
+
+  .left > form > .input3 > #icon2 > li {
+    list-style-image: url(./img/paper-plane.png);
+    transform: rotate(-35deg);
+  }
+
+  .left > form > .input1 > #icon2,
+  .input2 > #icon2,
+  .input3 > #icon2 {
+    flex-direction: row;
+    list-style-position: inside;
+    border-spacing: 0px;
+    background-color: transparent;
+    width: 18%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    border: 1px solid;
+  }
+
+  .left > form > .input1 > select,
+  .input2 > select,
+  .input3 > input {
+    width: 30em;
+    height: 8vh;
+    border: none;
+    border-spacing: 0px;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+      rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left form > .btn {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translatey(50px);
+  }
+
+  .left form > .btn > button {
+    width: 0%;
+    height: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .left form > .btn > button > ul {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .left > form > .btn > button > ul > #btn {
+    list-style: none;
+    width: fit-content;
+    height: fit-content;
+    list-style-image: url(./img/serving-dish.png);
+    list-style-position: inside;
+    padding: 0px;
+    margin: 0px;
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 500px;
+  }
+
+  .left > form > .btn > button > ul > #text {
+    list-style: none;
+    text-decoration: underline;
+    font-weight: bold;
+    width: 200%;
+  }
+
+  .left > form > .btn > button > ul > #btn:hover {
+    transform: scale(1.1);
+  }
+
+  .left > form > .btn > ul > #text {
+    list-style: none;
+    text-transform: capitalize;
+    font-size: 1rem;
+    width: fit-content;
+    height: fit-content;
+    background-color: transparent;
+  }
+  .sec-off .right {
+    background-color: rgb(255, 112, 112);
+    opacity: 0.6;
+    background-position: bottom;
+    width: 100%;
+    height: 30%;
+  }
+
+  .sec-off .right img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .bottom {
+    height: 10vh;
+  }
+  .bottom > .links {
+    display: flex;
+    flex-direction: column;
+  }
+  .bottom > .text > p {
+    font-size: 0.3rem;
+    width: fit-content;
+  }
+  .bottom > .links .fir-links {
+    font-size: 0.5rem;
+    height: 100%;
+    width: 100%;
+  }
+  .bottom > .links .sec-link {
+    height: 0%;
+    width: 0%;
+    display: none;
+  }
+}

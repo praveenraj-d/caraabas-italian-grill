@@ -1,0 +1,628 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: rgba(207, 253, 255, 0.553);
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  height: 10%;
+  z-index: 10000;
+  background-color: rgba(0, 0, 0, 0.792);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.log {
+  height: 100%;
+  width: 20%;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(255, 130, 130);
+}
+
+.log:hover {
+  border: 2px solid rgb(201, 255, 252);
+}
+
+.logo a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.logo a img {
+  height: 50%;
+  width: 70%;
+  border-radius: 100px;
+}
+
+nav > .navbar > ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  width: 100%;
+}
+
+nav > .navbar > ul li a {
+  text-decoration: none;
+  font-weight: bolder;
+  font-family: "Russo One", sans-serif;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  transition: 0.2s;
+}
+
+nav > .navbar > ul > li > a:hover {
+  color: rgb(195, 252, 250);
+}
+
+nav > .navbar > ul > li {
+  transition: 0.3s;
+  font-size: 1rem;
+}
+
+ul li:hover {
+  transform: scale(1.1);
+}
+
+.first-pic {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  overflow: hidden;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 70vh;
+  background-color: black;
+}
+
+.first-pic > .background {
+  width: 100%;
+  height: 86%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: rgb(38, 106, 106);
+}
+
+.background > .first-pic-text {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  width: fit-content;
+  height: 70%;
+  overflow: hidden;
+}
+
+.first-pic-text h1 {
+  font-size: 3rem;
+  font-variant: small-caps;
+  letter-spacing: 5px;
+  line-height: 45px;
+  border: 0.5px solid;
+  height: fit-content;
+  width: fit-content;
+}
+
+.first-pic-text span {
+  text-transform: capitalize;
+  font-size: 1.3rem;
+  font-weight: bold;
+  width: 69%;
+  height: fit-content;
+}
+
+.first-pic-text p {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  line-height: 20px;
+  font-weight: bold;
+  color: black;
+  letter-spacing: 5px;
+  background-color: white;
+  height: 25px;
+  width: fit-content;
+}
+
+.fourth-off-out {
+  width: 100%;
+  height: 50vh;
+  background-color: rgb(246, 151, 151);
+  text-transform: capitalize;
+  padding: 0px;
+  margin: 0px;
+  box-shadow: rgb(44, 62, 80) 0px -15px 15px -15px;
+  overflow: hidden;
+}
+
+.fourth-off-out .fourth-off {
+  width: 100%;
+  height: fit-content;
+}
+
+.fourth-off-out .fourth-off > form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  padding: 0px;
+  margin: 0px;
+  background-color: rgb(246, 151, 151);
+  overflow: hidden;
+}
+
+.fourth-off-out > .fourth-off > form > .text-box1 {
+  padding: 0px;
+  margin: 0px;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: aliceblue;
+}
+
+.fourth-off > form > .text-box1 > .mail,
+.zip,
+.phno {
+  padding: 10px;
+}
+
+.fourth-off-out > .fourth-off > form .mail > input,
+.phno > input,
+.zip > input {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  font-weight: bolder;
+  text-transform: capitalize;
+  border: 1px solid black;
+}
+
+.fourth-off-out > .fourth-off > form .mail > input:hover,
+.phno > input:hover,
+.zip > input:hover {
+  border: 2px solid rgb(246, 158, 5);
+}
+
+.fourth-off-out > .fourth-off > form > .text-box2 {
+  padding: 0px;
+  margin: 0px;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.fourth-off-out > .fourth-off > form > .text-box2 input {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  font-weight: bolder;
+  text-transform: capitalize;
+  border: 1px solid black;
+}
+
+.fourth-off-out > .fourth-off > form > .text-box2 input:hover {
+  border: 2px solid rgb(246, 158, 5);
+}
+
+.fourth-off > form > .text-box2,
+.name,
+.lastname,
+.text1 {
+  padding: 10px;
+}
+
+.fourth-off > form > .text-box2,
+.name > input,
+.lastname > input {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  font-weight: bolder;
+  text-transform: capitalize;
+  color: rgb(0, 0, 0);
+}
+
+.fourth-off > form > .text-box2 > .text1 > p {
+  width: 100%;
+  height: 50px;
+  font-size: 0.8rem;
+  text-align: justify;
+  font-weight: bolder;
+  text-transform: capitalize;
+  color: rgb(255, 255, 255);
+}
+.fourth-off > form > .text-box2 > .text1 a,
+.signup > .text2 a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+.fourth-off > form > .signup {
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 30%;
+  color: aliceblue;
+}
+
+.fourth-off > form > .signup,
+.butn,
+.text2 {
+  padding: 5px 10px;
+}
+
+.fourth-off > form > .signup,
+.butn,
+.text2 > p {
+  width: 400px;
+  font-weight: bolder;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+}
+
+.fourth-off > form > .signup > .butn > button {
+  width: 300px;
+  background-color: rgb(255, 238, 238);
+  color: rgb(0, 0, 0);
+  height: 60px;
+  cursor: pointer;
+  box-shadow: rgb(247, 153, 153) 0px 50px 100px -20px,
+    rgb(252, 168, 168) 0px 30px 60px -30px,
+    rgb(252, 162, 162) 0px -2px 6px 0px inset;
+  font-size: 1.3rem;
+  font-variant: small-caps;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fourth-off > form > .signup > .butn > button:hover {
+  background-color: rgba(128, 128, 128, 0.718);
+  color: black;
+}
+
+.sec-part {
+  width: 100%;
+  height: 185vh;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec-part > .box1 {
+  width: 98%;
+  height: 98%;
+  overflow: hidden;
+}
+
+.sec-part > .box1 .bx1,
+.bx2 {
+  width: 100%;
+  height: 50%;
+  background-color: rgb(212, 253, 255);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.sec-part > .box1 .bx1 > .pic,
+.bx2 > .pic {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.sec-part > .box1 .bx1 > .pic img,
+.bx2 > .pic img {
+  width: 100%;
+  height: 100%;
+}
+
+.sec-part > .box1 .bx1 > .cont,
+.bx2 > .cont {
+  width: 50%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.sec-part > .box1 > .bx1 > .cont span,
+.bx2 > .cont span {
+  font-size: 3rem;
+  font-weight: bolder;
+  color: brown;
+}
+
+.sec-part > .box1 > .bx1 > .cont p,
+.bx2 > .cont p {
+  font-weight: bold;
+}
+
+.sec-part > .box1 > .bx1 > .cont button,
+.bx2 > .cont button {
+  width: 55%;
+  height: 10%;
+  font-weight: bold;
+  background-color: aquamarine;
+  border: none;
+  margin: 15px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.sec-part > .box1 > .bx1 > .cont button:hover,
+.bx2 > .cont button:hover {
+  background-color: rgb(135, 199, 255);
+  font-weight: bolder;
+  font-size: 1.1rem;
+}
+
+.bottom {
+  overflow: hidden;
+  width: 100%;
+  height: 15vh;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.bottom > .links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 50%;
+  width: 100%;
+}
+
+.bottom > .links .fir-links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+  padding: 0px;
+  font-variant: small-caps;
+  font-size: 0.8rem;
+}
+
+.bottom > .links > .fir-links a {
+  color: rgb(255, 255, 255);
+  height: fit-content;
+  width: fit-content;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.bottom > .links .sec-link {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+  padding: 0px;
+  font-variant: small-caps;
+  font-size: 0.8rem;
+}
+
+.bottom > .links .sec-link a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  width: fit-content;
+  height: fit-content;
+  text-transform: capitalize;
+  font-weight: lighter;
+}
+
+.bottom > .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-end;
+  width: 99%;
+  height: 30%;
+  color: aliceblue;
+  overflow: hidden;
+}
+.bottom > .text > p {
+  width: fit-content;
+  word-spacing: 5px;
+  font-size: 0.8rem;
+}
+
+@media all and (max-width: 500px) {
+  nav {
+    height: 5vh;
+  }
+  nav > .navbar > ul > li {
+    font-size: 0.45rem;
+  }
+
+  .first-pic > .background {
+    height: 93%;
+  }
+
+  .background > .first-pic-text {
+    width: 100%;
+    height: 100%;
+  }
+
+  .first-pic-text h1 {
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    line-height: 25px;
+  }
+
+  .first-pic-text span {
+    font-size: 0.7rem;
+  }
+
+  .first-pic-text p {
+    font-size: 0.8rem;
+    line-height: 18px;
+    height: 10%;
+  }
+
+  .fourth-off-out {
+    height: fit-content;
+  }
+  .fourth-off-out .fourth-off {
+    height: 95%;
+    width: 100%;
+    display: flex;
+  }
+  .fourth-off-out .fourth-off form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+  .fourth-off-out > .fourth-off > form > .text-box1 {
+    width: 100%;
+    height: 25%;
+  }
+  .fourth-off-out > .fourth-off > form .mail > input,
+  .phno > input,
+  .zip > input {
+    height: 25px;
+  }
+  .fourth-off-out > .fourth-off > form > .text-box2 {
+    width: 100%;
+    height: 25%;
+  }
+  .fourth-off-out > .fourth-off > form > .text-box2 input {
+    height: 25px;
+  }
+  .fourth-off > form > .signup {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .fourth-off > form > .signup,
+  .butn {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+  }
+  .fourth-off > form > .signup > .text2 {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+  }
+  .fourth-off > form > .signup > .text2 > p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .sec-part > .box1 {
+    width: 100%;
+    height: 100%;
+  }
+
+  .sec-part > .box1 .bx1,
+  .bx2 {
+    flex-direction: column;
+  }
+
+  .sec-part > .box1 > .bx2 {
+    flex-direction: column-reverse;
+  }
+
+  .sec-part > .box1 .bx1 > .pic,
+  .bx2 > .pic {
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+  }
+
+  .sec-part > .box1 .bx1 > .cont,
+  .bx2 > .cont {
+    width: 100%;
+    height: 50%;
+  }
+
+  .sec-part > .box1 > .bx1 > .cont span,
+  .bx2 > .cont span {
+    font-size: 2rem;
+  }
+
+  .sec-part > .box1 > .bx1 > .cont p,
+  .bx2 > .cont p {
+    font-weight: lighter;
+  }
+
+  .sec-part > .box1 > .bx1 > .cont button,
+  .bx2 > .cont button {
+    width: 100%;
+    height: 15%;
+    background-color: aquamarine;
+    margin: 0px;
+    font-size: 1rem;
+  }
+
+  .bottom {
+    height: 10vh;
+  }
+  .bottom > .links {
+    display: flex;
+    flex-direction: column;
+  }
+  .bottom > .text > p {
+    font-size: 0.3rem;
+    width: fit-content;
+  }
+  .bottom > .links .fir-links {
+    font-size: 0.5rem;
+    height: 100%;
+    width: 100%;
+  }
+  .bottom > .links .sec-link {
+    height: 0%;
+    width: 0%;
+    display: none;
+  }
+}
